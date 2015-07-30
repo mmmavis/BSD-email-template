@@ -1,0 +1,18 @@
+body {
+  background: #55575c;
+  font-family: Trebuchet MS;
+}
+#main-container {
+  margin: 20px auto;
+  max-width: 600px;
+  border: 1px solid #000;
+  background: #585ba5;
+}
+#main-container h1 {
+  font-size: 69.333px;
+  text-align: center;
+}
+#main-container h2 {
+  font-size: 37.333px;
+  text-align: center;
+}
