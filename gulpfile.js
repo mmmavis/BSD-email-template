@@ -10,14 +10,14 @@ var premailer = require('gulp-premailer');
 gutil.log(gutil.colors.blue(" __dirname:", __dirname));
 
 gulp.task('compile-and-copy-files', ['less'], function() {
-  gulp.src('./src/**/index-no-premailer.html')
+  gulp.src('./src/**/index.html')
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
       }))
       .pipe(gulp.dest('./compiled'));
 
-  gulp.src('./src/**/index-premailered.html')
+  gulp.src('./src/**/index.html')
       .pipe(gulp.dest('./compiled'));
 
   gulp.src('./src/**/img/**')
@@ -27,7 +27,7 @@ gulp.task('compile-and-copy-files', ['less'], function() {
 gulp.task('premailer', function() {
   fs.exists('./compiled', function(exists) {
     if (exists) {
-      gulp.src('./compiled/**/index-no-premailer.html')
+      gulp.src('./compiled/**/index.html')
         .pipe(premailer())
         .pipe(gulp.dest('./premailer-formatted'));
     } else {
