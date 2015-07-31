@@ -4,7 +4,8 @@
   "description": "",
   "author": "Mavis Ou <mavis@mozillafoundation.org>",
   "scripts": {
-    "start": "rm -rf dist && gulp watch"
+    "prestart": "rm -rf compiled && rm -rf premailer-formatted",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
     "gulp-file-include": "^0.13.7",
     "gulp-less": "^3.0.1",
     "gulp-util": "^3.0.4",
-    "gulp-sourcemaps": "^1.5.0"
+    "gulp-premailer": "^0.4.0"
   },
   "devDependencies": {
 

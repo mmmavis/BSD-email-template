@@ -3,45 +3,182 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Webmaker Email Template</title>
+    <title>Webmaker Email</title>
     <style>
-      body {
+      /* ***** CSS properties to avoid and switch to HTML attributes *****
+*  margin, padding ---> cellspacing, cellpadding on <table>
+*  width, height ---> width, height on <table>, <td>
+*/
+body {
   background: #55575c;
   font-family: Trebuchet MS;
+  color: #ffffff;
 }
-#main-container {
+a {
+  color: #4bd4c0;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+}
+#container-table {
   margin: 20px auto;
-  max-width: 600px;
-  border: 1px solid #000;
-  background: #585ba5;
+  background: #55575c;
 }
-#main-container h1 {
+#content-wrapper-table {
+  background: url("https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/top-gradient.png") top center no-repeat #585ba5;
+  border: 1px solid #333;
+}
+#main-content h1 {
   font-size: 69.333px;
   text-align: center;
+  margin-top: 0;
 }
-#main-container h2 {
+#main-content h2 {
   font-size: 37.333px;
   text-align: center;
 }
+#secondary-content {
+  background: #7c7bb8;
+}
+#content-footer {
+  background: #00a7e1;
+}
+#content-footer a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
 
+/*# sourceMappingURL=../Webmaker/style.css.map */
     </style>
   </head>
   <body>
 
-    <table id="main-container" width="100%">
+    <table id="container-table" width="600">
       <tbody>
         <tr>
           <td>
-            <h1>Introducing the all-new <em>Webmaker<em></h1>
-            <h2>The simplest way to discover, create and share content on the Web.</h2>
+            <a href="https://mozilla.org">
+              <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/mozilla.png" alt="Mozilla wordmark" width="100" />
+            </a>
+            <br />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table id="content-wrapper-table" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td align="center">
+                    <a href="https://webmaker.org">
+                      <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-icon.png" alt="Webmaker logo" width="100" />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="main-content">
+<!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
+                    <p>
+                      sample content starts /////
+                    </p>
+                    <p>
+                      Cupcake ipsum dolor sit amet tiramisu ice cream candy marzipan. Jelly-o cotton candy gummi bears chocolate muffin cake liquorice sesame snaps. Gummi bears marshmallow pudding wafer candy pastry cake marshmallow soufflé.
+                    </p>
+                    <p>
+                      Wafer dragée bear claw carrot cake caramels powder chocolate bar cookie. Dragée cake candy canes candy canes toffee lollipop soufflé gingerbread. Cupcake cake jelly dessert lollipop lollipop. Soufflé bonbon cake sweet powder tiramisu cake jujubes.
+                    </p>
+                    <p>
+                      Brownie chocolate cake. Candy chupa chups tiramisu cake muffin gingerbread. Lemon drops powder cheesecake oat cake danish sweet icing tiramisu biscuit. Candy tootsie roll icing lollipop gingerbread marzipan donut sugar plum.
+                    </p>
+                    <p>
+                      Gingerbread cake biscuit candy canes tart tiramisu caramels sesame snaps ice cream. Dragée halvah apple pie croissant dragée sweet roll caramels caramels dragée. Sweet roll gummies caramels candy canes biscuit toffee bonbon jelly-o.
+                    </p>
+                    <p>
+                      Powder donut pudding pudding danish ice cream wafer cake. Danish cake fruitcake jelly jelly-o dragée. Halvah bear claw halvah tootsie roll danish ice cream candy canes.
+                    </p>
+<!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
+                  </td>
+                </tr>
+                <tr>
+                  <td id="secondary-content">
+                    <p>P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org">webmaker.org</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="content-footer" align="center">
+                    <table>
+                      <tr>
+                        <td align="center">
+                          <a href="https://webmaker.org">
+                            <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-footer-logo.png" alt="Webmaker logo" width="180" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table cellpadding="10">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="https://webmaker.org">Visit our website</a>
+                                </td>
+                                <td>
+                                  <a href="https://twitter.com/@webmaker">Follow @Webmaker</a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <table id="email-footer-table" cellpadding="20">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p>
+                              You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%">Unsubscribe</a>
+                            </p>
+                            <p>
+                              Mozilla<br />
+                              331 E. Evelyn Avenue<br />
+                              Mountain View CA 94041<br />
+                            </p>
+                            <p>
+                              Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/">Privacy Policy</a>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+
           </td>
         </tr>
       </tbody>
     </table>
 
   
-
-  <h1>omg</h1>
   </body>
 </html>
 

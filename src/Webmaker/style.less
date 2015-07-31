@@ -1,22 +1,61 @@
 @bgGrey: #55575c;
 @bgPurple: #585ba5;
+@bgLightPurple: #7c7bb8;
+@bgBlue: #00a7e1;
+@linkGreen: #4bd4c0;
+@white: #fff;
+
+/* ***** CSS properties to avoid and switch to HTML attributes *****
+*  margin, padding ---> cellspacing, cellpadding on <table>
+*  width, height ---> width, height on <table>, <td>
+*/
 
 body {
   background: @bgGrey;
   font-family: Trebuchet MS;
+  color: @white;
 }
 
-#main-container {
+a {
+  color: @linkGreen;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#container-table {
   margin: 20px auto;
-  max-width: 600px;
-  border: 1px solid #000;
-  background: @bgPurple;
+  background: @bgGrey;
+}
+
+#content-wrapper-table {
+  background: url("https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/top-gradient.png") top center no-repeat @bgPurple;
+  border: 1px solid #333;
+}
+
+#main-content {
   h1 {
     font-size: 69.333px;
     text-align: center;
+    margin-top: 0;
   }
   h2 {
     font-size: 37.333px;
     text-align: center;
+  }
+}
+
+#secondary-content {
+  background: @bgLightPurple;
+}
+
+#content-footer {
+  background: @bgBlue;
+  a {
+    display: inline-block;
+    color: @white;
+    text-decoration: none;
   }
 }
