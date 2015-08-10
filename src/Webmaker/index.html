@@ -13,57 +13,29 @@
     <table id="container-table" width="600">
       <tbody>
         <tr>
-          <td>
-            <a href="https://mozilla.org">
-              <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/mozilla.png" alt="Mozilla wordmark" width="100" />
-            </a>
-            <br />
-            <br />
+          <td id="logo-header" class="no-padding">
+            <img src="img/icon-top-banner.png" alt="Webmaker logo" width="100%" />
           </td>
         </tr>
         <tr>
-          <td>
-            <table id="content-wrapper-table" cellpadding="20">
+          <td class="no-padding">
+            <table id="content-wrapper-table" cellpadding="25">
               <tbody>
-                <tr>
-                  <td align="center">
-                    <a href="https://webmaker.org">
-                      <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-icon.png" alt="Webmaker logo" width="100" />
-                    </a>
-                  </td>
-                </tr>
                 <tr>
                   <td id="main-content">
 <!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
-                    <p>
-                      sample content starts /////
-                    </p>
-                    <p>
-                      Cupcake ipsum dolor sit amet tiramisu ice cream candy marzipan. Jelly-o cotton candy gummi bears chocolate muffin cake liquorice sesame snaps. Gummi bears marshmallow pudding wafer candy pastry cake marshmallow soufflé.
-                    </p>
-                    <p>
-                      Wafer dragée bear claw carrot cake caramels powder chocolate bar cookie. Dragée cake candy canes candy canes toffee lollipop soufflé gingerbread. Cupcake cake jelly dessert lollipop lollipop. Soufflé bonbon cake sweet powder tiramisu cake jujubes.
-                    </p>
-                    <p>
-                      Brownie chocolate cake. Candy chupa chups tiramisu cake muffin gingerbread. Lemon drops powder cheesecake oat cake danish sweet icing tiramisu biscuit. Candy tootsie roll icing lollipop gingerbread marzipan donut sugar plum.
-                    </p>
-                    <p>
-                      Gingerbread cake biscuit candy canes tart tiramisu caramels sesame snaps ice cream. Dragée halvah apple pie croissant dragée sweet roll caramels caramels dragée. Sweet roll gummies caramels candy canes biscuit toffee bonbon jelly-o.
-                    </p>
-                    <p>
-                      Powder donut pudding pudding danish ice cream wafer cake. Danish cake fruitcake jelly jelly-o dragée. Halvah bear claw halvah tootsie roll danish ice cream candy canes.
-                    </p>
+                    @@include('./sample-content.html')
 <!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
                   </td>
                 </tr>
                 <tr>
                   <td id="secondary-content">
-                    <p>P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org">webmaker.org</a></p>
+                    <p>P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org"><span>webmaker.org</span></a></p>
                   </td>
                 </tr>
                 <tr>
                   <td id="content-footer" align="center">
-                    <table>
+                    <table cellpadding="5">
                       <tr>
                         <td align="center">
                           <a href="https://webmaker.org">
@@ -77,10 +49,10 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <a href="https://webmaker.org">Visit our website</a>
+                                  <a href="https://webmaker.org"><span>Visit our website</span></span></a>
                                 </td>
                                 <td>
-                                  <a href="https://twitter.com/@webmaker">Follow @Webmaker</a>
+                                  <a href="https://twitter.com/@webmaker"><img src="img/twitter.png" alt="Webmaker logo" height="12" /><span>Follow @Webmaker</span></a>
                                 </td>
                               </tr>
                             </tbody>
@@ -95,25 +67,23 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td class="no-padding">
             <table>
               <tbody>
                 <tr>
-                  <td>
-                    <table id="email-footer-table" cellpadding="20">
+                  <td class="no-padding">
+                    <table cellpadding="20">
                       <tbody>
                         <tr>
-                          <td>
+                          <td id="email-footer" >
                             <p>
-                              You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%">Unsubscribe</a>
+                              You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%"><span>Unsubscribe</span></a>
                             </p>
                             <p>
-                              Mozilla<br />
-                              331 E. Evelyn Avenue<br />
-                              Mountain View CA 94041<br />
+                              Mozilla 331 E. Evelyn Avenue, Mountain View, CA 94041<br />
                             </p>
                             <p>
-                              Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/">Privacy Policy</a>
+                              Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/"><span>Privacy Policy</span></a>
                             </p>
                           </td>
                         </tr>
@@ -125,15 +95,8 @@
             </table>
           </td>
         </tr>
-        <tr>
-          <td>
-
-          </td>
-        </tr>
       </tbody>
     </table>
-
-  <!-- @@include('./test.html') -->
   </body>
 </html>
 

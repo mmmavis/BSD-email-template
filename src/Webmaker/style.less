@@ -1,7 +1,8 @@
-@bgGrey: #55575c;
-@bgPurple: #585ba5;
-@bgLightPurple: #7c7bb8;
-@bgBlue: #00a7e1;
+@bgPurple: #6365ab;
+@bgLightPurple: #dfdeef;
+@bgLightBlue: #00a7e1;
+@bgBlue: #0090c2;
+@textPurple: #49479d;
 @linkGreen: #4bd4c0;
 @white: #fff;
 
@@ -11,28 +12,34 @@
 */
 
 body {
-  background: @bgGrey;
+  background: @bgPurple;
   font-family: Trebuchet MS;
-  color: @white;
+  color: @textPurple;
 }
 
 a {
-  color: @linkGreen;
   text-decoration: none;
 }
 
-table {
+table,
+td {
   border-collapse: collapse;
+}
+
+td.no-padding {
+  padding: 0;
 }
 
 #container-table {
   margin: 20px auto;
-  background: @bgGrey;
 }
 
 #content-wrapper-table {
-  background: url("https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/top-gradient.png") top center no-repeat @bgPurple;
-  border: 1px solid #333;
+  background: url("") top center no-repeat @bgLightPurple;
+}
+
+#logo-header {
+ background: @bgLightPurple;
 }
 
 #main-content {
@@ -49,13 +56,28 @@ table {
 
 #secondary-content {
   background: @bgLightPurple;
+  a > span {
+    color: @textPurple;
+    font-weight: bold;
+  }
 }
 
 #content-footer {
-  background: @bgBlue;
+  background: @bgLightBlue;
   a {
     display: inline-block;
+  }
+  a > span {
     color: @white;
     text-decoration: none;
+  }
+}
+
+#email-footer {
+  background: @bgBlue;
+  color: @white;
+  a > span {
+    color: @white;
+    text-decoration: underline;
   }
 }

@@ -4,5 +4,5 @@ experimental setup for building BSD email template
 
 # Prerequisites
 
-- install
-- `rvm pkg install libyaml`
+- install premailer `sudo gem install premailer`
+- install libyaml `sudo rvm pkg install libyaml`

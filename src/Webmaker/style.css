@@ -3,24 +3,28 @@
 *  width, height ---> width, height on <table>, <td>
 */
 body {
-  background: #55575c;
+  background: #6365ab;
   font-family: Trebuchet MS;
-  color: #ffffff;
+  color: #49479d;
 }
 a {
-  color: #4bd4c0;
   text-decoration: none;
 }
-table {
+table,
+td {
   border-collapse: collapse;
+}
+td.no-padding {
+  padding: 0;
 }
 #container-table {
   margin: 20px auto;
-  background: #55575c;
 }
 #content-wrapper-table {
-  background: url("https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/top-gradient.png") top center no-repeat #585ba5;
-  border: 1px solid #333;
+  background: url("") top center no-repeat #dfdeef;
+}
+#logo-header {
+  background: #dfdeef;
 }
 #main-content h1 {
   font-size: 69.333px;
@@ -32,13 +36,27 @@ table {
   text-align: center;
 }
 #secondary-content {
-  background: #7c7bb8;
+  background: #dfdeef;
+}
+#secondary-content a > span {
+  color: #49479d;
+  font-weight: bold;
 }
 #content-footer {
   background: #00a7e1;
 }
 #content-footer a {
   display: inline-block;
+}
+#content-footer a > span {
   color: #ffffff;
   text-decoration: none;
+}
+#email-footer {
+  background: #0090c2;
+  color: #ffffff;
+}
+#email-footer a > span {
+  color: #ffffff;
+  text-decoration: underline;
 }

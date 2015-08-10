@@ -17,9 +17,6 @@ gulp.task('compile-and-copy-files', ['less'], function() {
       }))
       .pipe(gulp.dest('./compiled'));
 
-  gulp.src('./src/**/index.html')
-      .pipe(gulp.dest('./compiled'));
-
   gulp.src('./src/**/img/**')
       .pipe(gulp.dest('./compiled'));
 });
@@ -45,7 +42,7 @@ gulp.task('less', function () {
 
 gulp.task('watch', function() {
   gutil.log(gutil.colors.blue("watching..."));
-  gulp.watch(['./src/**/*.html', './src/**/style.less'], ['compile-and-copy-files']);
+  gulp.watch(['./src/**/*.html', './src/**/style.less', './src/**/img/**'], ['compile-and-copy-files']);
 });
 
 gulp.task('build', ['premailer'], function() {
