@@ -9,82 +9,89 @@
     </style>
   </head>
   <body>
-
-    <table id="container-table" width="600">
+    <table id="background-table" align="center">
       <tbody>
         <tr>
-          <td id="logo-header" class="no-padding">
-            <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/icon-top-banner.png" alt="Header banner" width="100%" />
-          </td>
-        </tr>
-        <tr>
-          <td class="no-padding">
-            <table id="content-wrapper-table" cellpadding="25">
+          <td>
+            <table id="container-table" width="600" align="center">
               <tbody>
                 <tr>
-                  <td id="main-content">
-<!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
-                    @@include('./sample-content.html')
-<!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
+                  <td id="logo-header" class="no-padding" >
+                    <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/icon-top-banner.png" alt="Header banner" width="100%" />
                   </td>
                 </tr>
                 <tr>
-                  <td id="secondary-content">
-                    <p>P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org"><span>webmaker.org</span></a></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td id="content-footer" align="center">
-                    <table cellpadding="5">
-                      <tr>
-                        <td align="center">
-                          <a href="https://webmaker.org">
-                            <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-footer-logo.png" alt="Webmaker logo" width="180" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table cellpadding="10">
-                            <tbody>
+                  <td class="no-padding">
+                    <table id="content-wrapper-table" cellpadding="25">
+                      <tbody>
+                        <tr>
+                          <td id="main-content">
+              <!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
+                            @@include('./sample-content.html')
+              <!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="secondary-content">
+                            <p>P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org"><span>webmaker.org</span></a></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td id="content-footer" align="center">
+                            <table cellpadding="5">
                               <tr>
-                                <td>
-                                  <a href="https://webmaker.org"><span>Visit our website</span></span></a>
-                                </td>
-                                <td>
-                                  <a href="https://twitter.com/@webmaker"><img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/twitter.png" alt="Twitter icon" /><span>Follow @Webmaker</span></a>
+                                <td align="center">
+                                  <a href="https://webmaker.org">
+                                    <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-footer-logo.png" alt="Webmaker logo" width="180" />
+                                  </a>
                                 </td>
                               </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
+                              <tr>
+                                <td align="center">
+                                  <table cellpadding="10">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <a href="https://webmaker.org"><span>Visit our website</span></span></a>
+                                        </td>
+                                        <td>
+                                          <a href="https://twitter.com/@webmaker"><img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/twitter.png" alt="Twitter icon" width="28" /><span>Follow @Webmaker</span></a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-padding">
-            <table>
-              <tbody>
                 <tr>
                   <td class="no-padding">
-                    <table cellpadding="20">
+                    <table>
                       <tbody>
                         <tr>
-                          <td id="email-footer" >
-                            <p>
-                              You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%"><span>Unsubscribe</span></a>
-                            </p>
-                            <p>
-                              Mozilla 331 E. Evelyn Avenue, Mountain View, CA 94041<br />
-                            </p>
-                            <p>
-                              Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/"><span>Privacy Policy</span></a>
-                            </p>
+                          <td class="no-padding">
+                            <table cellpadding="20">
+                              <tbody>
+                                <tr>
+                                  <td id="email-footer" >
+                                    <p>
+                                      You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%"><span>Unsubscribe</span></a>
+                                    </p>
+                                    <p>
+                                      Mozilla 331 E. Evelyn Avenue, Mountain View, CA 94041<br />
+                                    </p>
+                                    <p>
+                                      Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/"><span>Privacy Policy</span></a>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </td>
                         </tr>
                       </tbody>
