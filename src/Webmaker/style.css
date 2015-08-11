@@ -10,6 +10,16 @@ body {
 a {
   text-decoration: none;
 }
+a img {
+  border: 0 none;
+}
+img {
+  border: 0 none;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
 table,
 td {
   border-collapse: collapse;
@@ -21,7 +31,7 @@ td.no-padding {
   margin: 20px auto;
 }
 #content-wrapper-table {
-  background: url("") top center no-repeat #dfdeef;
+  background: #dfdeef;
 }
 #logo-header {
   background: #dfdeef;
