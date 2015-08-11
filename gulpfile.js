@@ -5,8 +5,6 @@ var less = require('gulp-less');
 var gutil = require('gulp-util');
 var fileinclude = require('gulp-file-include');
 
-var premailer = require('gulp-premailer');
-
 gutil.log(gutil.colors.blue(" __dirname:", __dirname));
 
 gulp.task('compile-and-copy-files', ['less'], function() {
@@ -21,18 +19,6 @@ gulp.task('compile-and-copy-files', ['less'], function() {
       .pipe(gulp.dest('./compiled'));
 });
 
-gulp.task('premailer', function() {
-  fs.exists('./compiled', function(exists) {
-    if (exists) {
-      gulp.src('./compiled/**/index.html')
-        .pipe(premailer())
-        .pipe(gulp.dest('./premailer-formatted'));
-    } else {
-      gutil.log(gutil.colors.red("[Error] Make sure your source files are compiled first."));
-    }
-  })
-});
-
 gulp.task('less', function () {
   gutil.log(gutil.colors.blue("compiling less..."));
   return gulp.src('./src/**/style.less')
@@ -40,11 +26,7 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./src'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['compile-and-copy-files'], function() {
   gutil.log(gutil.colors.blue("watching..."));
   gulp.watch(['./src/**/*.html', './src/**/style.less', './src/**/img/**'], ['compile-and-copy-files']);
-});
-
-gulp.task('build', ['premailer'], function() {
-  gutil.log(gutil.colors.blue("running premailer..."));
 });

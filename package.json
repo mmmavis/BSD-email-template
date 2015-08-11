@@ -19,8 +19,7 @@
     "gulp": "^3.8.11",
     "gulp-file-include": "^0.13.7",
     "gulp-less": "^3.0.1",
-    "gulp-util": "^3.0.4",
-    "gulp-premailer": "^0.4.0"
+    "gulp-util": "^3.0.4"
   },
   "devDependencies": {
 
