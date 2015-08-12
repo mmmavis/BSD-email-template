@@ -47,13 +47,6 @@ td.no-padding {
   font-size: 37.333px;
   text-align: center;
 }
-#secondary-content {
-  background: #dfdeef;
-}
-#secondary-content a > span {
-  color: #49479d;
-  font-weight: bold;
-}
 #content-footer {
   background: #00a7e1;
 }
