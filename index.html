@@ -17,11 +17,18 @@
           font-size: 16px;
         }
       }
+      @media screen and (max-width: 479px) {
+        body {
+          font-size: 12px;
+        }
+      }
       .wrap {
         margin: 2rem auto;
         max-width: 800px;
+      }
+      #box {
         background: rgba(255,255,255,.5);
-        padding: 0.5rem 1.5rem;
+        padding: 2rem 1.5rem;
         border-radius: .5rem;
       }
       h1 {
@@ -29,8 +36,8 @@
         text-align: center;
         font-weight: 300;
       }
-      h3 {
-        margin: 0 0 10px 0;
+      h4 {
+        margin: 0 0 .5rem 0;
         text-align: center;
         font-weight: 300;
       }
@@ -43,23 +50,37 @@
       }
       ul {
         list-style-type: none;
-        padding-left: 0;
+        padding-left: 10px;
       }
       li:before {
         content: "\2665";
         margin-right: 10px;
         color: #E3649F;
       }
+      #note {
+        font-size: 14px;
+        text-align: right;
+      }
+      #note a {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <h1>MoFo BSD Email Templates</h1>
-      <h3>...for reference only ;)</h3>
-      <ul>
-        <li><a href="compiled/Webmaker/index.html">Webmaker</a></li>
-        <li><a href="compiled/Thimble/index.html">Thimble</a></li>
-      </ul>
+      <div id="box">
+        <h1>MoFo BSD Email Templates</h1>
+        <h4>...for reference only ;)</h4>
+        <ul>
+          <li><a href="compiled/Webmaker/index.html">Webmaker</a></li>
+          <li><a href="compiled/Thimble/index.html">Thimble</a></li>
+        </ul>
+      </div>
+      <div id="note">
+        <p>
+          Note that the email template code used here has not been processed by <a href="http://premailer.dialect.ca/">Premailer</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
