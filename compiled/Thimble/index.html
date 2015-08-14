@@ -3,16 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Webmaker Email</title>
+    <title>Thimble Email</title>
     <style>
-      /* ***** CSS properties to avoid and switch to HTML attributes *****
+      @import url("https://code.cdn.mozilla.net/fonts/fira.css");
+/* ***** CSS properties to avoid and switch to HTML attributes *****
 *  margin, padding ---> cellspacing, cellpadding on <table>
 *  width, height ---> width, height on <table>, <td>
 */
 body {
-  background: #6365ab;
-  font-family: Trebuchet MS;
-  color: #49479d;
+  background: #e3ecf1;
+  color: #6e6f72;
+  font-family: 'Fira Sans', Arial;
 }
 a {
   text-decoration: none;
@@ -37,13 +38,17 @@ td.no-padding {
   padding: 0;
 }
 #background-table {
-  background: #6365ab;
+  background: url("img/teach-referral-bg-white@2x.png") repeat repeat #e3ecf1;
+  background-size: 399px 393px;
 }
 #content-wrapper-table {
-  background: #dfdeef;
+  border: 1px solid #ccc;
 }
 #logo-header {
-  background: #dfdeef;
+  background: #5bb1e0;
+}
+#main-content {
+  background: #ffffff;
 }
 #main-content h1 {
   font-size: 69.333px;
@@ -55,42 +60,42 @@ td.no-padding {
   text-align: center;
 }
 #content-footer {
-  background: #00a7e1;
+  background: #f5f5f5;
+  font-size: 21px !important;
 }
 #content-footer a {
   display: inline-block;
 }
 #content-footer a > span {
-  color: #ffffff;
+  color: #00adef;
   text-decoration: none;
 }
 #email-footer {
-  background: #0090c2;
-  color: #ffffff;
+  font-size: 12px !important;
 }
 #email-footer a > span {
-  color: #ffffff;
+  color: #6e6f72;
   text-decoration: underline;
 }
 
     </style>
   </head>
   <body>
-    <table id="background-table" align="center">
+    <table id="background-table" align="center" width="100%">
       <tbody>
         <tr>
           <td>
             <table id="container-table" width="600" align="center">
               <tbody>
                 <tr>
-                  <td id="logo-header" class="no-padding" >
-                    <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/icon-top-banner.png" alt="Header banner" width="100%" />
-                  </td>
-                </tr>
-                <tr>
                   <td class="no-padding">
                     <table id="content-wrapper-table" cellpadding="25">
                       <tbody>
+                        <tr>
+                          <td id="logo-header">
+                            <img src="img/mozilla_wordmark_white.png" alt="Mozilla wordmark" width="140px" />
+                          </td>
+                        </tr>
                         <tr>
                           <td id="main-content">
               <!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
@@ -113,9 +118,6 @@ td.no-padding {
   Powder donut pudding pudding danish ice cream wafer cake. Danish cake fruitcake jelly jelly-o dragée. Halvah bear claw halvah tootsie roll danish ice cream candy canes.
 </p>
 <p>
-  P.S. Webmaker is more fun when your friends and family are creating with you. Help us spread the word to your networks by tweeting: Excited to try the new @Webmaker app for android, a new content creation and learning app from @Mozilla. Learn more: <a href="http://webmaker.org"><span>webmaker.org</span></a>
-</p>
-<p>
   ///// sample content ends /////
 </p>
 
@@ -127,25 +129,9 @@ td.no-padding {
                             <table cellpadding="5">
                               <tr>
                                 <td align="center">
-                                  <a href="https://webmaker.org">
-                                    <img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/webmaker-footer-logo.png" alt="Webmaker logo" width="180" />
-                                  </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center">
-                                  <table cellpadding="10">
-                                    <tbody>
-                                      <tr>
-                                        <td>
-                                          <a href="https://webmaker.org"><span>Visit our website</span></a>
-                                        </td>
-                                        <td>
-                                          <a href="https://twitter.com/@webmaker"><img src="https://sendto.mozilla.org/page/-/webmaker-email-template-July-2015/img/twitter.png?v=2" alt="Twitter icon" width="28" /><span>Follow @Webmaker</span></a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                  <td>
+                                    Visit us at <a href="https://teach.mozilla.org"><span>https://teach.mozilla.org</span></a>
+                                  </td>
                                 </td>
                               </tr>
                             </table>
@@ -164,16 +150,39 @@ td.no-padding {
                             <table cellpadding="20">
                               <tbody>
                                 <tr>
-                                  <td id="email-footer" >
-                                    <p>
-                                      You're receiving this email because you subscribed to receive email newsletters and information from Mozilla. If you do not wish to receive these newsletters, please click <a href="%%UNSUBSCRIBE%%"><span>Unsubscribe</span></a>
-                                    </p>
-                                    <p>
-                                      Mozilla 331 E. Evelyn Avenue, Mountain View, CA 94041, United States<br />
-                                    </p>
-                                    <p>
-                                      Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/"><span>Privacy Policy</span></a>
-                                    </p>
+                                  <td id="email-footer">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <table>
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    Mozilla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  </td>
+                                                  <td>
+                                                    <p>
+                                                      You're getting this message because you're a part of Mozilla. If you're on this list by accident or you'd like to opt out from here on in, please <a href="%%UNSUBSCRIBE%%"><span>click here</span></a> to unsubscribe. Read the Mozilla <a href="https://www.mozilla.org/privacy/websites/"><span>Privacy Policy</span>.</a> Have a question about Mozilla? Contact us at: <a href="mailto:joinmozilla@mozilla.org"><span>joinmozilla@mozilla.org</span></a>
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <p>
+                                              Mozilla. 331 E. Evelyn Avenue, Mountain View, CA 94041, United States<br />
+                                            </p>
+                                            <p>
+                                              Copyright © 2015 Mozilla Foundation Content available under a Creative Commons share-alike license V2.0
+                                            </p>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </td>
                                 </tr>
                               </tbody>

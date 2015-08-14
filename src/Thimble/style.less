@@ -1,0 +1,91 @@
+@bgGrey: #e3ecf1;
+@bgLightGrey: #f5f5f5;
+@bgBlue: #5bb1e0;
+@textGrey: #6E6F72;
+@linkBlue: #00ADEF;
+@white: #fff;
+
+@import url("https://code.cdn.mozilla.net/fonts/fira.css");
+
+/* ***** CSS properties to avoid and switch to HTML attributes *****
+*  margin, padding ---> cellspacing, cellpadding on <table>
+*  width, height ---> width, height on <table>, <td>
+*/
+
+body {
+  background: @bgGrey;
+  color: @textGrey;
+  font-family: 'Fira Sans', Arial;
+}
+
+a {
+  text-decoration: none;
+  img {
+    border: 0 none;
+    outline: none;
+  }
+}
+
+ img{
+  border: 0 none;
+  max-width: 600px !important;
+  height: auto !important;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table,
+td {
+  border-collapse: collapse;
+}
+
+td.no-padding {
+  padding: 0;
+}
+
+#background-table {
+  background: url("img/teach-referral-bg-white@2x.png") repeat repeat @bgGrey;
+  background-size: 399px 393px;
+}
+
+#content-wrapper-table {
+  border: 1px solid #ccc;
+}
+
+#logo-header {
+  background: @bgBlue;
+}
+
+#main-content {
+  background: @white;
+  h1 {
+    font-size: 69.333px;
+    text-align: center;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 37.333px;
+    text-align: center;
+  }
+}
+
+#content-footer {
+  background: @bgLightGrey;
+  font-size: 21px !important;
+  a {
+    display: inline-block;
+  }
+  a > span {
+    color: @linkBlue;
+    text-decoration: none;
+  }
+}
+
+#email-footer {
+  font-size: 12px !important;
+  a > span {
+    color: @textGrey;
+    text-decoration: underline;
+  }
+}
