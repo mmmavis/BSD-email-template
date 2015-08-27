@@ -31,7 +31,7 @@ td.no-padding {
   padding: 0;
 }
 #background-table {
-  background: url("https://sendto.mozilla.org/page/-/thimble-email-template-August-2015/img/teach-referral-bg-white%402x.png") repeat repeat #e3ecf1;
+  background: url("https://sendto.mozilla.org/page/-/thimble-email-template-August-2015/img/teach-referral-bg-white-50%25%402x.png") repeat repeat #e3ecf1;
   background-size: 399px 393px;
 }
 #content-wrapper-table {
@@ -63,8 +63,9 @@ td.no-padding {
   color: #00adef;
   text-decoration: none;
 }
-#email-footer {
+#email-footer p {
   font-size: 12px !important;
+  line-height: 1.2;
 }
 #email-footer a > span {
   color: #6e6f72;
