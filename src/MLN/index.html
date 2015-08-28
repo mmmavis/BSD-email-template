@@ -3,82 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Thimble Email</title>
+    <title>MLN Email</title>
     <style>
-      @import url("https://code.cdn.mozilla.net/fonts/fira.css");
-/* ***** CSS properties to avoid and switch to HTML attributes *****
-*  margin, padding ---> cellspacing, cellpadding on <table>
-*  width, height ---> width, height on <table>, <td>
-*/
-body {
-  background: #e3ecf1;
-  color: #6e6f72;
-  font-family: 'Fira Sans', Trebuchet MS;
-}
-a {
-  text-decoration: none;
-}
-a img {
-  border: 0 none;
-  outline: none;
-}
-img {
-  border: 0 none;
-  max-width: 600px !important;
-  height: auto !important;
-  line-height: 100%;
-  outline: none;
-  text-decoration: none;
-}
-table,
-td {
-  border-collapse: collapse;
-}
-td.no-padding {
-  padding: 0;
-}
-#background-table {
-  background: url("https://sendto.mozilla.org/page/-/thimble-email-template-August-2015/img/teach-referral-bg-white-50%25%402x.png") repeat repeat #e3ecf1;
-  background-size: 399px 393px;
-}
-#content-wrapper-table {
-  border: 1px solid #ccc;
-}
-#logo-header {
-  background: #5bb1e0;
-}
-#main-content {
-  background: #ffffff;
-}
-#main-content h1 {
-  font-size: 69.333px;
-  text-align: center;
-  margin-top: 0;
-}
-#main-content h2 {
-  font-size: 37.333px;
-  text-align: center;
-}
-#content-footer {
-  background: #f5f5f5;
-  font-size: 21px !important;
-}
-#content-footer a {
-  display: inline-block;
-}
-#content-footer a > span {
-  color: #00adef;
-  text-decoration: none;
-}
-#email-footer p {
-  font-size: 12px !important;
-  line-height: 1.2;
-}
-#email-footer a > span {
-  color: #6e6f72;
-  text-decoration: underline;
-}
-
+      @@include('./style.css')
     </style>
   </head>
   <body>
@@ -94,34 +21,13 @@ td.no-padding {
                       <tbody>
                         <tr>
                           <td id="logo-header">
-                            <a href="https://teach.mozilla.org/"><img src="https://sendto.mozilla.org/page/-/thimble-email-template-August-2015/img/mozilla_wordmark_white.png" alt="" width="140" /></a>
+                            <a href="https://teach.mozilla.org/"><img src="https://sendto.mozilla.org/page/-/MLN-email-template-August-2015/img/mozilla_wordmark_white.png" alt="" width="140" /></a>
                           </td>
                         </tr>
                         <tr>
                           <td id="main-content">
               <!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
-                            <p>
-  ///// sample content starts /////
-</p>
-<p>
-  Cupcake ipsum dolor sit amet tiramisu ice cream candy marzipan. Jelly-o cotton candy gummi bears chocolate muffin cake liquorice sesame snaps. Gummi bears marshmallow pudding wafer candy pastry cake marshmallow soufflé.
-</p>
-<p>
-  Wafer dragée bear claw carrot cake caramels powder chocolate bar cookie. Dragée cake candy canes candy canes toffee lollipop soufflé gingerbread. Cupcake cake jelly dessert lollipop lollipop. Soufflé bonbon cake sweet powder tiramisu cake jujubes.
-</p>
-<p>
-  Brownie chocolate cake. Candy chupa chups tiramisu cake muffin gingerbread. Lemon drops powder cheesecake oat cake danish sweet icing tiramisu biscuit. Candy tootsie roll icing lollipop gingerbread marzipan donut sugar plum.
-</p>
-<p>
-  Gingerbread cake biscuit candy canes tart tiramisu caramels sesame snaps ice cream. Dragée halvah apple pie croissant dragée sweet roll caramels caramels dragée. Sweet roll gummies caramels candy canes biscuit toffee bonbon jelly-o.
-</p>
-<p>
-  Powder donut pudding pudding danish ice cream wafer cake. Danish cake fruitcake jelly jelly-o dragée. Halvah bear claw halvah tootsie roll danish ice cream candy canes.
-</p>
-<p>
-  ///// sample content ends /////
-</p>
-
+                            @@include('./sample-content.html')
               <!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
                           </td>
                         </tr>
@@ -160,7 +66,7 @@ td.no-padding {
                                               <tbody>
                                                 <tr>
                                                   <td>
-                                                    <a href="https://www.mozilla.org/"><img src="https://sendto.mozilla.org/page/-/thimble-email-template-August-2015/img/mozilla_wordmark_grey.png" alt="Mozilla wordmark" width="100" /></a>
+                                                    <a href="https://www.mozilla.org/"><img src="https://sendto.mozilla.org/page/-/MLN-email-template-August-2015/img/mozilla_wordmark_grey.png" alt="Mozilla wordmark" width="100" /></a>
                                                   </td>
                                                   <td>
                                                     <p>
